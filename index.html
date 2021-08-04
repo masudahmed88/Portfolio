@@ -4,81 +4,83 @@
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>website</title>
+    <title>Masud Ahmed's Portfolio</title>
 </head>
 
 <body>
-    <nav class="nav-bar">
+   
+    <nav class="nav-header">
+
+        <!-- Added a flex container on the navigation  -->
+            <div class="wrapper">
+                <div class="flex-container">
+                    <a href="#About_me"> <div class="About Me"> About Me </a> </div>
+                    <a href="#Work"> <div class="Work">Work </div> </a>
+                    <a href="#Contact_Me"><div class="Contact_Me"> Contact Me </a> </div>
+                    <div class="box four"> Resume </div>
+        
+                </div>
+            </div>
         <h1>Masud Ahmed</h1>
-        <div>
-            <ul>
-                <li>
-                    <a href="#About_me">About Me</a>
-                </li>
-                <li>
-                    <a href="#Work">Work</a>
-                </li>
-                <li>
-                    <a href="#Contact_Me">Contact Me</a>
-                </li>
-                <li>
-                    <a href="#Resume">Resume</a>
-                </li>
-            </ul>
-        </div>
+
     </nav>
     <div class="main"></div>
     <div class="content">
-        <div id="About_me" class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" class="float-left" />
+        <div id="About_me">        
+             <!--Added a linkedin picture in the About me  -->
+            <img src="./assets/images/Linkedin Profile pic.PNG" width="100px" height="100px" class="float-left" />
             <h2>About Me </h2>
             <p>
-               My name is Masud Ahmed. I have five years of experience as QA tester.  
+               My name is Masud Ahmed. I was a QA tester with five years of experience in testing cross-functional applications
+                while working for both web-based and client-server applications. 
+                I am aiming to obtain a developer role that will allow me to use my technical 
+                skills and help an organization grow.  
             </p>
         </div>
-        <div id="Work" class="online-reputation-management">
-            <img src="./assets/images/online-reputation-management.jpg" class="float-right" />
+        <!-- Added a link in the image of the first project i did in class -->
+        <div id="Work">
+            
+           <a href="https://masudahmed88.github.io/codeRefractor/"> <img src="assets//images/work.PNG" alt="My first project." height="250px"width="250px"></a>
             <h2>Work</h2>
-            <p>
-                The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
-            </p>
+            
         </div>
-        <div id="Contact_Me" class="social-media-marketing">
+        <div id="Contact_Me">
             <img src="./assets/images/social-media-marketing.jpg" class="float-left" />
             <h2>Contact Me</h2>
-            <p>
-                Social media continues to have a sizable influence on buying habits. Social media marketing helps you determine which platforms are suited to your brand, using analytics to find the right markets and increase your lead generation.
-            </p>
+            <ul> 
+               
+               <strong> <li><a href="https://www.linkedin.com/in/atm-masud-ahmed-a82112218/">Linkedlin Profile </a> </li> </strong>
+                <br>
+               <strong> <li><a href="mailto: masudahmed88@gmail.com"> Email: masudahmed88@gmail.com</a></li> </strong>
+                <br>
+               <strong><li> Number: 973-572-7486 </li> </strong>
+               
+            </ul>
         </div>
     </div>
-    <div class="benefits">
-        <div class="benefit-lead">
-            <h3>Lead Generation</h3>
-            <img src="./assets/images/lead-generation.png" />
-            <p>
-                Inbound strategies for lead generation require less work for your business, bringing customers directly to your website.
-            </p>
-        </div>
-        <div class="benefit-brand">
-            <h3>Brand Awareness</h3>
-            <img src="./assets/images/brand-awareness.png" />
-            <p>
-                Users find your business through paid and organic searches, increasing the search ranking and visibility for your business.
-            </p>
-        </div>
-        <div class="benefit-cost">
-            <h3>Cost Management</h3>
-            <img src="./assets/images/cost-management.png" />
-            <p>
-                As the search ranking for your business increases, your advertising costs decrease, and you no longer need to advertise your page.
-            </p>
-        </div>
+     <div class="benefits"> 
+        
+       
+<!-- Added a resume in the aside, but still have to touch this section up and figure what i want to do with it -->
+        <aside class="Resume">
+            <h3> Resume</h3>
+
+            
+                <p> Past experience
+                    Past experience I have learned throughout my professional career.</p>
+                    <br> 
+
+
+                <p> Tools
+                    The essential tools I have learned in class. 
+                </p>
+
+
+        </aside>
     </div>
     <div class="footer">
-        <h2>Made with ❤️️ by Horiseon</h2>
-        <p>
-            &copy; 2019 Horiseon Social Solution Services, Inc.
-        </p>
+        <h2>Masud's Portfolio</h2>
+        
     </div>
 </body>
 

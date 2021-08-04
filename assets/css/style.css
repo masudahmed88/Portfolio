@@ -4,25 +4,47 @@
     margin: 0;
 }
 
-body {
-    background-color: #82857fa1;
+/* Added a css variable to manipulate the background color */
+:root {
+    --gray: #82857fa1;
+    --green: #61c291;
+    --section_color:#a7412fa1;
 }
 
-.nav-bar {
+body {
+    background-color: var(--gray);
+}
+
+.nav-header {
     padding: 20px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: #106d3e;
+    background-color: var(--green);
     color: #ffffff;
 }
 
-.nav-bar h1 {
+.nav-header h1 {
     display: inline-block;
     font-size: 48px;
+    background-color: var(--green);
 }
 
+.wrapper{
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    position: relative;
+    top: 20%;
+}
 
+/* Added a flexbox within the navigation */
+.flex-container{
+    display: flex;
+    background: var(--green);
+    justify-content: center;
+    list-style-type: none;
+}
 
-.nav-bar div {
+.nav-header div {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -30,14 +52,6 @@ body {
     font-size: 20px;
 }
 
-.nav-bar div ul {
-    list-style-type: none;
-}
-
-.nav-bar div ul li {
-    display: inline-block;
-    margin-left: 25px;
-}
 
 a {
     color: #ffffff;
@@ -84,104 +98,75 @@ p {
     background-color: #2589bd;
 }
 
-.benefit-lead {
+.Resume {
     margin-bottom: 32px;
     color: #ffffff;
 }
 
-.benefit-brand {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
-.benefit-cost {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefit-lead h3 {
+.Resume h3 {
     margin-bottom: 10px;
     text-align: center;
 }
 
-.benefit-brand h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
 
-.benefit-cost h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefit-lead img {
+.Resume img {
     display: block;
     margin: 10px auto;
     max-width: 150px;
 }
 
-.benefit-brand img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefit-cost img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.search-engine-optimization {
+#About_me {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #a7412fa1;
+    background-color: var(--section_color);
     color: #ffffff;
 }
 
-.online-reputation-management {
+#Work {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #a7412fa1;
+    background-color: var(--section_color);
     color: #ffffff;
 }
 
-.social-media-marketing {
+#Contact_Me {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #a7412fa1;
+    background-color: var(--section_color);
     color: #ffffff;
 }
 
-.search-engine-optimization img {
+#About_me img {
     max-height: 200px;
 }
 
-.online-reputation-management img {
+#Work img {
+    max-height: 200px;
+    
+}
+
+#Contact_Me img {
     max-height: 200px;
 }
 
-.social-media-marketing img {
-    max-height: 200px;
-}
-
-.search-engine-optimization h2 {
+#About_me h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.online-reputation-management h2 {
+#Work h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
 
-.social-media-marketing h2 {
+#Contact_Me h2 {
     margin-bottom: 20px;
     font-size: 36px;
 }
@@ -195,4 +180,56 @@ p {
 
 .footer h2 {
     font-size: 20px;
+}
+
+/* Added media queries to make portfolio responsive. 
+Still need to touch this section up.  */
+
+@media screen and (max-width: 855px){
+     
+    #Contact_Me{
+
+        font-size: 10px;
+    }
+
+    h2{
+        font-size: 15px;
+    }
+ 
+   
+}
+
+@media screen and (max-width: 750px){
+     
+    div #Contact_Me{
+        height: 600px;
+    }
+   
+}
+
+@media screen and (max-width: 600px){
+    div #About_me{
+        height: 600px;
+    }
+
+    div #Work{
+        height: 600px;
+
+    }
+    }
+    
+
+    @media screen and (max-width: 580px){
+        .main{
+            height:600px;
+            width: 300px;
+        }
+        
+
+}
+@media screen and (max-width: 450px){
+    .wrapper{
+        display:block;
+        position:fixed;
+    }
 }
